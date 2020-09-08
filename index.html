@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script src="js/main.js" defer></script>
     <title>BBC clone</title>
   </head>
   <body>
@@ -19,10 +29,10 @@
         <nav class="header__mid wrap__layout">
           <h2>메뉴</h2>
           <ul class="gnb__wrap">
-            <li class="gnb__item">menu1</li>
-            <li class="gnb__item">menu2</li>
-            <li class="gnb__item">menu3</li>
-            <li class="gnb__item">menu4</li>
+            <li class="gnb__item">Home</li>
+            <li class="gnb__item">bbc</li>
+            <li class="gnb__item">apple</li>
+            <li class="gnb__item">momentum</li>
           </ul>
         </nav>
         <nav class="gnb__bottom">
@@ -37,7 +47,7 @@
           <h2 class="cont__title">'8개월 아기 육아 중'... 아빠의 하루일과</h2>
           <div class="info">
             <span>BAEGOON</span>
-            <span>2020년 9월 6일</span>
+            <span><i class="far fa-clock"></i>2020년 9월 6일</span>
             <span>아들과 추억을 만들어가기</span>
           </div>
           <p>
@@ -48,23 +58,35 @@
         </div>
         <div class="sticky__wrap">
           <section class="img__wrap sticky">
-            <img src="imgs/1a.png" alt="" / class="on">
-            <img src="imgs/2a.png" alt="" />
-            <img src="imgs/3a.png" alt="" />
+            <div class="img__position">
+              <div class="on item morning">
+                <img src="imgs/1.png" alt="" />
+              </div>
+              <div class="item park">
+                <img src="imgs/2.png" alt="" />
+              </div>
+              <div class="item work">
+                <img src="imgs/3.png" alt="" />
+              </div>
+              <div class="item shop">
+                <img src="imgs/4.png" alt="" />
+              </div>
+              <div class="item shower">
+                <img src="imgs/5.png" alt="" />
+              </div>
+              <div class="item sleep">
+                <img src="imgs/6.png" alt="" />
+              </div>
+            </div>
           </section>
           <section class="text__wrap">
-            <p class="text">
+            <p class="text first">
               이른 아침 아들 울음소리에 오늘도 잠을 깹니다. '으아아아아앙~' 가장
               확실한 알람인것 같습니다.
             </p>
             <p class="text">
               아침에는 아이와 함께 공원 산책을 합니다. 공원 산책을 하다보면
               새소리와 바람소리에 마음이 상쾌해집니다.
-            </p>
-            <p class="text">
-              아들과 장난감 놀이를 합니다. 같이 있다보면 동심으로 돌아가는
-              기분도 들고 마치 장난감이 살아 움직이지 않을까 하는 기대감도
-              있습니다.
             </p>
             <p class="text">
               오후에는 아이가 잠들면 개인 작업을 진행합니다. 몰랐던 공부를
@@ -87,36 +109,25 @@
           </section>
         </div>
         <div class="normal__wrap last">
-          <h3>물론 모든 것이 바뀌는 것은 아니다</h3>
+          <h3>아이와 함께 하는 것</h3>
           <p class="normal__text">
-            레일라는 코로나19 사태 이후 발생한 많은 변화에 비교적 빠르게
-            적응했다. 인간과 달리 건축은 변화에 천천히 반응한다. 일반적으로
-            건물을 설계하고 재정을 확보하고 건설하는 데 5년이 걸리기 때문이다.
-            많은 사람은 집을 옮길 여유가 없거나 집을 개선하는 데 큰 돈을 쓰기
-            어렵다. 불경기에 직면한 만큼, 많은 고용주는 회사를 이전하거나
-            재편성할 여유가 없을 것이다. 만약 백신이 빨리 개발돼 코로나19가
-            앞으로 몇 달 안에 종식된다면, 우리의 일상이 ‘정상'으로 돌아갈 수
-            있을지도 모르겠다. 하지만 레일라의 가상 일상의 일부는 우리의 현실이
-            될 수도 있다. 코로나19가 계속 확산하고 백신 개발이 더뎌진다면 말이다
+            배군은 잘 다니던 회사를 그만두고 아이와 함께하기로 한 것에 대해서
+            후회는 하지 않는다. 그에게는 아이와 함께한 1달이라는 시간이 굉장히
+            소중했기 때문이다. 성장 과정의 일부를 함께 한다는 것은 정말로
+            유익하고 가치있는 일이라고 확신한다. 이 시간 동안에 아이와도 확실히
+            친해졌다. 아이가 나를 의지하고 푹 안겨서 잠이들면 너무 행복하다.
+            앞으로도 이 사랑스러운 아이를 지켜줄 것이다.
           </p>
-          <h3>재무적 변화의 필요성</h3>
+          <h3>사회의 구성원으로 돌아갈 시간</h3>
           <p class="normal__text">
-            많은 건축가들은 원격근무 문화가 자리 잡는 것이 코로나19 사태가
-            가져온 가장 큰 건축적 변화라고 말한다. 왜? 돈 때문이다. 미국
-            뉴욕시에서 공공 건축을 담당했던 데이빗 버니 교수는 기업들이 집에서
-            일하는 직원 수를 늘림으로써 사무실 공간 사용과 이에 대한 지출을 줄일
-            수 있다고 분석했다. 그는 "사무공간 수요가 줄고 있다"며"이 부분에
-            있어 부동산 업계가 이미 혼란에 빠진 모습을 보이고 있다"고 말했다.
+            이제 사회의 구성원이 되어서 다시 직장생활을 하게 될 것이다. 코로나에
+            취업난이 예상된다. 그래도 사랑하는 가족을 위해서 즐겁게 해보기로
+            한다. 다시 바빠지고 가족들과 함께할 수 있는 시간이 줄어드는 것이
+            너무 아쉽지만, 이것이 내가 책임져야 할 삶의 부분이다. 이렇게 할 수
+            있다는 것에 감사를 느끼며 나를 필요로 하는 곳을 찾아봐야겠다.
           </p>
-          <h3>재무적 변화의 필요성</h3>
-          <p class="normal__text">
-            많은 건축가들은 원격근무 문화가 자리 잡는 것이 코로나19 사태가
-            가져온 가장 큰 건축적 변화라고 말한다. 왜? 돈 때문이다. 미국
-            뉴욕시에서 공공 건축을 담당했던 데이빗 버니 교수는 기업들이 집에서
-            일하는 직원 수를 늘림으로써 사무실 공간 사용과 이에 대한 지출을 줄일
-            수 있다고 분석했다. 그는 "사무공간 수요가 줄고 있다"며"이 부분에
-            있어 부동산 업계가 이미 혼란에 빠진 모습을 보이고 있다"고 말했다.
-          </p>
+          <h3>만든사람들</h3>
+          <p class="normal__text">글과 제작 배군, 그림 김연정</p>
         </div>
       </article>
       <footer>
