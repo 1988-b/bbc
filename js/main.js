@@ -5,6 +5,7 @@ const defaultSet = {
   text: document.querySelectorAll(".text"),
   imgs: document.querySelectorAll(".item"),
   contains: document.querySelector(".img__position"),
+  bird: document.querySelector(".bird"),
 };
 
 let currentItem;
@@ -44,7 +45,15 @@ addEventListener("scroll", () => {
       }
       currentItem = defaultSet.imgs[text.dataset.index];
       currentItem.classList.add("on");
+      if (currentItem.dataset.index * 1 === 1) {
+        defaultSet.bird.classList.add('fly');
+        defaultSet.bird.style.transform = `translateX(${innerWidth}px)`;
+      } else {
+        defaultSet.bird.classList.remove('fly');
+        defaultSet.bird.style.transform = `translateX(0px)`;
+      }
     }
+
   }
 });
 
