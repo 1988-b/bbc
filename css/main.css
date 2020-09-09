@@ -14,6 +14,14 @@ img {
 header {
   margin-bottom: 5em;
 }
+a{
+  all:unset;
+  color:#1d1d1f;
+  cursor: pointer;
+}
+.pc_br{
+  display:block;
+}
 .wrap__layout {
   width: 100%;
   max-width: 1024px;
@@ -30,7 +38,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35px;
+  height: 60px;
   padding-top: 4px;
   padding-right: 1em;
   border-right: 1px solid #ccc;
@@ -38,8 +46,8 @@ header {
 .gnb__bt {
   display: block;
   position: relative;
-  height: 35px;
-  padding-top: 7px;
+  height: 60px;
+  padding-top: 20px;
   padding-left: 1em;
   padding-right: 2em;
   border-right: 1px solid #ccc;
@@ -50,7 +58,7 @@ header {
 .gnb__bt:after {
   content: "";
   position: absolute;
-  top: 17.5px;
+  top: 32.5px;
   right: 1em;
   transform: translateY(-50%);
   width: 6px;
@@ -88,7 +96,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 35px;
+  height: 40px;
   background-color: #bb1a19;
 }
 .gnb__bottom-wrap {
@@ -101,6 +109,7 @@ header {
   padding-right: 0.5em;
   margin-right: 0.5em;
   font-weight: 100;
+  line-height:1px;
 }
 .gnb__bottom-wrap h2:after {
   content: "";
@@ -114,7 +123,6 @@ header {
 }
 .gnb__bottom-wrap span {
   display: block;
-  padding-top: 3px;
 }
 .fa-clock {
   padding-right: 2px;
@@ -144,14 +152,12 @@ header {
 
 .normal__wrap {
   width: 100%;
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
-  margin-bottom: 20vh;
 }
 
 .normal__wrap.last h3 {
   font-size: 1.5rem;
-  margin-top: 5em;
   margin-bottom: 1em;
 }
 .normal__text {
@@ -163,7 +169,7 @@ header {
   color: #888;
 }
 .cont__title {
-  font-size: 3rem;
+  font-size: 4rem;
   word-break: keep-all;
   margin-bottom: 20px;
 }
@@ -172,9 +178,28 @@ header {
   margin-bottom: 1em;
 }
 .info + p {
+  font-size:1.3rem;
   word-break: keep-all;
   line-height: 1.6;
-  color: #888;
+  color: #1d1d1f;
+  font-weight:500;
+
+}
+.info span{
+  font-size:1rem;
+  margin-right:10px;
+  padding-right:10px;
+  border-right:1px solid #333;
+}
+
+
+.info span:first-child{
+  color:#bb1a19;
+  padding-right:0;
+}
+.info span:first-child,
+.info span:last-child{
+  border-right:none;
 }
 
 .img__wrap.sticky {
@@ -237,6 +262,9 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .pc_br{
+    display:none;
+  }
   header {
     padding: 0 2%;
   }
